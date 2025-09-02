@@ -1,0 +1,24 @@
+# ---- Python/Django ----
+venv/
+.venv/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# ---- Frontend (Vite/React) ----
+node_modules/
+dist/
+dist-ssr/
+*.local
+logs
+*.log
+
+# ---- Media & Snapshots ----
+backend/media/
+backend/snapshots/
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
