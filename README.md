@@ -9,7 +9,7 @@ This repository is a **monorepo** that contains both the backend API (Django/DRF
 
 * **Users & Roles (RBAC):** Manager / Developer / Tester, authenticated with **JWT**.
 * **Tasks:** create & assign, priorities, statuses, due dates, filtering/search.
-* **Collaboration:** task comments with **@mentions** and in-app **notifications** (mark as read).
+* **Collaboration:** task comments with **@mentions** and in‑app **notifications** (mark as read).
 * **Attachments:** (optional) upload files on tasks.
 * **Attendance AI (optional):** local camera face detection to estimate presence/idle intervals and produce daily/weekly summaries that can be displayed in the app.
 
@@ -24,7 +24,7 @@ teamcollab/
 ```
 
 * **`teamcollab-backend/`** → The secure **API server**. It exposes REST endpoints for auth, users, tasks, comments, notifications, and receives summarized data from the AI module. Built with **Django** + **Django REST Framework**, using **SimpleJWT** for authentication.
-* **`teamcollab-frontend/`** → The **web app UI**. A **React** single-page app (built by **Vite**) that talks to the backend via HTTP (Axios), handles login/roles, lists projects & tasks, shows comments/notifications, and admin views. Styled with **Tailwind CSS**.
+* **`teamcollab-frontend/`** → The **web app UI**. A **React** single‑page app (built by **Vite**) that talks to the backend via HTTP (Axios), handles login/roles, lists projects & tasks, shows comments/notifications, and admin views. Styled with **Tailwind CSS**.
 
 Think of it like this:
 **Frontend = what users see and click** → calls → **Backend = the API that reads/writes data**.
@@ -85,16 +85,9 @@ Create **`.env`** files (do **not** commit them):
 ## 🔐 Production Notes
 
 * Set `DEBUG=False`, keep secrets in environment variables.
-* Use **short-lived access tokens**, refresh rotation & blacklist.
+* Use **short‑lived access tokens**, refresh rotation & blacklist.
 * Serve via **HTTPS** and restrict **CORS** to your domains.
 * Prefer **PostgreSQL** over SQLite in production.
-
----
-
-## 📁 Package Documentation
-
-* [`teamcollab-backend/README.md`](./teamcollab-backend/README.md) — API, setup, environment, endpoints.
-* [`teamcollab-frontend/README.md`](./teamcollab-frontend/README.md) — UI, scripts, environment, structure.
 
 ---
 
@@ -107,7 +100,7 @@ Add a license file (e.g., MIT) as `LICENSE`.
 ## 🙌 Contributors
 
 * **Ahmed Elawady** — Database & AI module
-* **Partner** — Frontend & parts of backend
+* **Amr Gamal** — Frontend & parts of backend
 
 ---
 
